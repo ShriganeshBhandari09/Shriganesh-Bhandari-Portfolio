@@ -34,15 +34,22 @@ body {
   display: inline;
 }
 
-article {
-  padding: 1rem;
-}
-
 .navigation-bar {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 20px 10px 20px 20px;
+  padding: 30px 20px 20px 20px;
+}
+
+.introduction-section,
+.about-me, .portfolio, .contact-form {
+  padding: 1em;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .pink-text {
@@ -88,7 +95,8 @@ h1::after,
 .p-tag::after,
 h2::before,
 h2::after,
-form::before, form::after {
+form::before,
+form::after {
   font-family: La Belle Aurore, cursive;
   opacity: 0.2;
   font-size: 1em;
@@ -143,7 +151,7 @@ ol {
   flex-direction: column;
   gap: 20px;
   font-size: 1.5em;
-  padding: 20px;
+  padding: 40px;
 }
 
 a {
@@ -164,13 +172,14 @@ a {
 
 .projects img {
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-items: center;
   padding-right: 20px;
+  max-width: 100%;
+  max-height: 100%;
 }
-.project-description{
-    font-size: 1.2em;
+.project-description {
+  font-size: 1.2em;
 }
 
 .languages-used {
@@ -227,10 +236,10 @@ textarea {
   font-family: Barlow;
 }
 
-input::placeholder, textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   color: white;
 }
-
 
 .submit-form {
   padding: 10px 30px 10px 30px;
@@ -239,13 +248,14 @@ input::placeholder, textarea::placeholder{
   font-size: 1.5em;
   background: none;
   border: 0.2px solid #fd1056;
+  font-family: Barlow;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: La Belle Aurore, cursive;
-    font-size: 1.3em;
-    padding: 20px;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: La Belle Aurore, cursive;
+  font-size: 1.3em;
+  padding: 20px;
 }
