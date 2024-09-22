@@ -281,15 +281,20 @@ textarea::placeholder {
   color: white;
 }
 
-.submit-form {
+.submit-form-button {
   padding: 10px 30px 10px 30px;
   width: fit-content;
-  color: white;
+  color: #fd1056;
   font-size: 1.5em;
   background: none;
   border: 0.2px solid #fd1056;
   font-family: Barlow;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-form-button:hover {
+  background-color: white;
 }
 
 footer {
@@ -334,7 +339,7 @@ footer {
     font-size: 1em;
   }
 
-  .submit-form {
+  .submit-form-button {
     padding: 10px 50px 10px 50px;
   }
 
@@ -403,10 +408,10 @@ footer {
   }
 
   li a:hover:before {
-    content: "<";
+    content: "< ";
   }
   li a:hover::after {
-    content: "/>";
+    content: " />";
   }
 
   .main-container {
@@ -429,7 +434,7 @@ footer {
     font-weight: 700;
   }
 
-  .h2-tag{
+  .h2-tag {
     font-size: 3.5em;
   }
   .project-description {
@@ -444,5 +449,93 @@ footer {
     justify-content: center;
     align-items: center; */
     width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navigation-bar {
+    width: 20%;
+    gap: 60px;
+  }
+
+  .main-container {
+    left: 350px;
+    max-width: 80%;
+    top: 100px;
+  }
+
+  ul {
+    font-size: 2.5em;
+    gap: 70px;
+  }
+
+  .h1-tag {
+    font-size: 7em;
+  }
+
+  .gray-text {
+    font-size: 3.8em;
+  }
+
+  #check-my-work {
+    padding: 20px 70px 20px 70px;
+    font-size: 2em;
+  }
+
+  .h2-tag {
+    font-size: 4.5em;
+  }
+
+  .description,
+  h3,
+  ol {
+    font-size: 2.5em;
+  }
+
+  ol {
+    padding: 40px 80px 40px 80px;
+  }
+
+  .project-description {
+    font-size: 2.1em;
+  }
+
+  .languages-used p {
+    font-size: 1.5rem;
+    padding: 5px 20px;
+  }
+
+  .redirect-icons img {
+    width: 60px;
+    height: 60px;
+  }
+
+  form input,
+  textarea {
+    width: 70%;
+    font-size: 2em;
+  }
+
+  .submit-form-button {
+    font-size: 2em;
+    padding: 10px 90px 10px 90px;
+  }
+
+  h1::before,
+  h1::after,
+  .p-tag::before,
+  .p-tag::after,
+  h2::before,
+  h2::after,
+  form::before,
+  form::after {
+    font-size: 2rem;
+  }
+
+  .introduction-section,
+  .about-me,
+  .portfolio,
+  .contact-form {
+    padding: 3em;
   }
 }
