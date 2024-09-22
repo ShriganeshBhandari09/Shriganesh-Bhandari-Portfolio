@@ -22,55 +22,6 @@ body {
   font-family: Barlow;
 }
 
-/* #root{
-    display: flex;
-} */
-
-.h1-tag {
-  font-size: 3.3em;
-  font-family: Barlow;
-  font-weight: 900;
-  letter-spacing: 1px;
-  display: inline;
-}
-
-.navigation-bar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 30px 20px 20px 20px;
-}
-
-.introduction-section,
-.about-me, .portfolio, .contact-form {
-  padding: 1em;
-}
-
-.about-me {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.pink-text {
-  color: #fd1056;
-  letter-spacing: 2px;
-}
-
-.gray-text {
-  color: gray;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-/* ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-} */
-
 h1::before {
   content: "<h1>";
   display: block;
@@ -87,39 +38,6 @@ h1::after {
 
 .p-tag::after {
   content: "</p>";
-}
-
-h1::before,
-h1::after,
-.p-tag::before,
-.p-tag::after,
-h2::before,
-h2::after,
-form::before,
-form::after {
-  font-family: La Belle Aurore, cursive;
-  opacity: 0.2;
-  font-size: 1em;
-}
-
-#check-my-work {
-  padding: 10px 40px 10px 40px;
-  font-size: 1.2em;
-  background: none;
-  color: #fd1056;
-  border: 0.5px solid #fd1056;
-  outline: none;
-  cursor: pointer;
-  text-align: center;
-}
-
-#check-my-work:hover {
-  background-color: white;
-}
-
-.h2-tag {
-  font-size: 2.5em;
-  color: #fd1056;
 }
 
 h2::before {
@@ -140,10 +58,120 @@ form::after {
   content: "</form>";
 }
 
+.languages-used p::before {
+  content: "< ";
+  display: inline;
+  font-family: Barlow;
+  color: white;
+  opacity: 1;
+}
+
+.languages-used p::after {
+  content: " />";
+  display: inline;
+  font-family: Barlow;
+  color: white;
+  opacity: 1;
+}
+
+h1::before,
+h1::after,
+.p-tag::before,
+.p-tag::after,
+h2::before,
+h2::after,
+form::before,
+form::after {
+  font-family: La Belle Aurore, cursive;
+  opacity: 0.2;
+  font-size: 1em;
+}
+
+/* #root{
+    display: flex;
+} */
+
+.introduction-section,
+.about-me,
+.portfolio,
+.contact-form {
+  padding: 1em;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 30px 20px 20px 20px;
+}
+
+.introduction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .description {
   font-size: 1.5em;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.h1-tag {
+  font-size: 3.3em;
+  font-family: Barlow;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline;
+}
+
+.pink-text {
+  color: #fd1056;
+  letter-spacing: 2px;
+}
+
+.gray-text {
+  color: gray;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#check-my-work {
+  padding: 10px 40px 10px 40px;
+  font-size: 1.2em;
+  background: none;
+  color: #fd1056;
+  border: 0.5px solid #fd1056;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+}
+
+#check-my-work:hover {
+  background-color: white;
+}
+
+.h2-tag {
+  font-size: 2.5em;
+  color: #fd1056;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.4em;
 }
 
 ol {
@@ -154,7 +182,7 @@ ol {
   padding: 40px;
 }
 
-a {
+.projects a {
   color: #fd1056;
   text-decoration: none;
 }
@@ -170,13 +198,19 @@ a {
   gap: 40px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .projects img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 20px;
   max-width: 100%;
   max-height: 100%;
+  margin: 0 auto;
 }
 .project-description {
   font-size: 1.2em;
@@ -194,21 +228,6 @@ a {
   padding: 5px;
 }
 
-.languages-used p::before {
-  content: "< ";
-  display: inline;
-  font-family: Barlow;
-  color: white;
-  opacity: 1;
-}
-
-.languages-used p::after {
-  content: " />";
-  display: inline;
-  font-family: Barlow;
-  color: white;
-  opacity: 1;
-}
 .redirect-icons {
   display: flex;
   gap: 20px;
