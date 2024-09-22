@@ -158,6 +158,7 @@ form::after {
   cursor: pointer;
   text-align: center;
   width: fit-content;
+  font-family: Barlow;
 }
 
 #check-my-work:hover {
@@ -215,7 +216,11 @@ ol {
 .project-description {
   font-size: 1.2em;
 }
-
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .languages-used {
   display: flex;
   gap: 20px;
@@ -234,8 +239,8 @@ ol {
 }
 
 .redirect-icons img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
 form {
@@ -277,4 +282,42 @@ footer {
   font-family: La Belle Aurore, cursive;
   font-size: 1.1em;
   padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .introduction-section,
+  .about-me,
+  .portfolio,
+  .contact-form {
+    padding: 1.5em;
+  }
+
+  .h1-tag {
+    font-size: 3.6em;
+  }
+
+  .projects {
+    flex-direction: row;
+  }
+
+  .projects img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redirect-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-description {
+    font-size: 1.1em;
+  }
+
+  .submit-form {
+    padding: 10px 50px 10px 50px;
+  }
 }
