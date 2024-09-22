@@ -452,7 +452,97 @@ footer {
   }
 }
 
+
 @media screen and (min-width: 1440px) {
+    .navigation-bar {
+      width: 25%;
+      gap: 30px;
+    }
+  
+    .main-container {
+      left: 350px;
+      max-width: 70%;
+      top: 60px;
+    }
+  
+    ul {
+      font-size: 2.2em;
+      gap: 40px;
+    }
+  
+    .h1-tag {
+      font-size: 5.5em;
+    }
+  
+    .gray-text {
+      font-size: 2.3em;
+    }
+  
+    #check-my-work {
+      padding: 20px 70px 20px 70px;
+      font-size: 1.5em;
+    }
+  
+    .h2-tag {
+      font-size: 3.5em;
+    }
+  
+    .description,
+    h3,
+    ol {
+      font-size: 2em;
+    }
+  
+    ol {
+      padding: 40px 60px 40px 60px;
+    }
+  
+    .project-description {
+      font-size: 1.8em;
+    }
+  
+    .languages-used p {
+      font-size: 1.3rem;
+      padding: 5px 20px;
+    }
+  
+    .redirect-icons img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    form input,
+    textarea {
+      width: 80%;
+      font-size: 1.5em;
+    }
+  
+    .submit-form-button {
+      font-size: 1.5em;
+      padding: 10px 90px 10px 90px;
+    }
+  
+    h1::before,
+    h1::after,
+    .p-tag::before,
+    .p-tag::after,
+    h2::before,
+    h2::after,
+    form::before,
+    form::after {
+      font-size: 1.8rem;
+    }
+  
+    .introduction-section,
+    .about-me,
+    .portfolio,
+    .contact-form {
+      padding: 2.5em;
+    }
+  }
+  
+
+/* @media screen and (min-width: 1440px) {
   .navigation-bar {
     width: 20%;
     gap: 60px;
@@ -460,7 +550,7 @@ footer {
 
   .main-container {
     left: 350px;
-    max-width: 80%;
+    max-width: 70%;
     top: 100px;
   }
 
@@ -538,4 +628,4 @@ footer {
   .contact-form {
     padding: 3em;
   }
-}
+} */
