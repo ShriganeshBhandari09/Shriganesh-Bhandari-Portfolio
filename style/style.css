@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=La+Belle+Aurore&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -83,9 +84,17 @@ h2::after,
 form::before,
 form::after {
   font-family: La Belle Aurore, cursive;
-  opacity: 0.2;
-  font-size: 1em;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  color: #8d8d8d;
 }
+
+/* h1::after,
+.p-tag::after,
+h2::after,
+form::after{
+    margin-left: 20px;
+} */
 
 /* #root{
     display: flex;
@@ -159,6 +168,7 @@ form::after {
   text-align: center;
   width: fit-content;
   font-family: Barlow;
+  border-radius: 8px;
 }
 
 #check-my-work:hover {
@@ -169,6 +179,10 @@ form::after {
   font-size: 2.5em;
   color: #fd1056;
   padding-bottom: 20px;
+}
+
+.description a {
+  color: #fd1056;
 }
 
 h3 {
@@ -252,12 +266,13 @@ form {
 form input,
 textarea {
   font-size: 1.5em;
-  padding: 10px 10px 10px 10px;
+  padding: 15px 10px 15px 10px;
   border: none;
   outline: none;
   background-color: hsla(0, 0%, 69%, 0.035);
   color: white;
   font-family: Barlow;
+  border-radius: 8px;
 }
 
 input::placeholder,
@@ -273,6 +288,7 @@ textarea::placeholder {
   background: none;
   border: 0.2px solid #fd1056;
   font-family: Barlow;
+  border-radius: 8px;
 }
 
 footer {
@@ -314,10 +330,21 @@ footer {
   }
 
   .project-description {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .submit-form {
     padding: 10px 50px 10px 50px;
+  }
+
+  /* h1::after,
+  .p-tag::after,
+  h2::after,
+  form::after {
+    margin-left: 20px;
+  } */
+
+  footer{
+    font-size: 1.5em;
   }
 }
