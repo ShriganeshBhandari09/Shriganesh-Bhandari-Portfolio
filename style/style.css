@@ -27,7 +27,7 @@ body {
 } */
 
 .h1-tag {
-  font-size: 3.5em;
+  font-size: 3.3em;
   font-family: Barlow;
   font-weight: 900;
   letter-spacing: 1px;
@@ -256,6 +256,6 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: La Belle Aurore, cursive;
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 20px;
 }
