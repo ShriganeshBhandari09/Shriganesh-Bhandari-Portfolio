@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=La+Belle+Aurore&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  /* width: 200px;
+  height: 200px; */
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: white;
+  font-family: Barlow;
+}
+
+/* #root{
+    display: flex;
+} */
+
+.h1-tag {
+  font-size: 3.5em;
+  font-family: Barlow;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline;
+}
+
+article {
+  padding: 1rem;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px 10px 20px 20px;
+}
+
+.pink-text {
+  color: #fd1056;
+  letter-spacing: 2px;
+}
+
+.gray-text {
+  color: gray;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+} */
+
+h1::before {
+  content: "<h1>";
+  display: block;
+}
+
+h1::after {
+  content: "</h1>";
+}
+
+.p-tag::before {
+  content: "<p>";
+  display: block;
+}
+
+.p-tag::after {
+  content: "</p>";
+}
+
+h1::before,
+h1::after,
+.p-tag::before,
+.p-tag::after,
+h2::before,
+h2::after,
+form::before, form::after {
+  font-family: La Belle Aurore, cursive;
+  opacity: 0.2;
+  font-size: 1em;
+}
+
+#check-my-work {
+  padding: 10px 40px 10px 40px;
+  font-size: 1.2em;
+  background: none;
+  color: #fd1056;
+  border: 0.5px solid #fd1056;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#check-my-work:hover {
+  background-color: white;
+}
+
+.h2-tag {
+  font-size: 2.5em;
+  color: #fd1056;
+}
+
+h2::before {
+  content: "<h2>";
+  display: block;
+}
+
+h2::after {
+  content: "</h2>";
+}
+
+form::before {
+  content: "<form>";
+  display: block;
+}
+
+form::after {
+  content: "</form>";
+}
+
+.description {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+a {
+  color: #fd1056;
+  text-decoration: none;
+}
+/* .projects{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+} */
+
+#project {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects img {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+.project-description{
+    font-size: 1.2em;
+}
+
+.languages-used {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.languages-used p {
+  background-color: hsla(0, 0%, 69%, 0.035);
+  border: 0.2px;
+  padding: 5px;
+}
+
+.languages-used p::before {
+  content: "< ";
+  display: inline;
+  font-family: Barlow;
+  color: white;
+  opacity: 1;
+}
+
+.languages-used p::after {
+  content: " />";
+  display: inline;
+  font-family: Barlow;
+  color: white;
+  opacity: 1;
+}
+.redirect-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.redirect-icons img {
+  width: 60px;
+  height: 60px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+textarea {
+  font-size: 1.5em;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  outline: none;
+  background-color: hsla(0, 0%, 69%, 0.035);
+  color: white;
+  font-family: Barlow;
+}
+
+input::placeholder, textarea::placeholder{
+  color: white;
+}
+
+
+.submit-form {
+  padding: 10px 30px 10px 30px;
+  width: fit-content;
+  color: white;
+  font-size: 1.5em;
+  background: none;
+  border: 0.2px solid #fd1056;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: La Belle Aurore, cursive;
+    font-size: 1.3em;
+    padding: 20px;
+}
