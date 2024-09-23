@@ -290,24 +290,24 @@ ol {
   height: 40px;
 }
 
-.education-content, .certificate{
+.education-content,
+.certificate {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
-.certificates-section, .education-section{
+.certificates-section,
+.education-section {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-
-.certificate p, .education p{
-  color: rgba(255, 255, 255, 0.7)
+.certificate p,
+.education p {
+  color: rgba(255, 255, 255, 0.7);
 }
-
 
 form {
   display: flex;
@@ -411,14 +411,15 @@ footer {
     font-size: 3em;
     font-weight: 600;
   }
-  .education-content h3, .certificate h3{
+  .education-content h3,
+  .certificate h3 {
     font-size: 1.5em;
   }
 
-  .education-content p, .certificate p{
+  .education-content p,
+  .certificate p {
     font-size: 1.4em;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -541,7 +542,7 @@ footer {
 
   .projects {
     max-height: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -561,20 +562,21 @@ footer {
     font-size: 2.3rem;
   }
 
-
-  .education-content, .certificate{
+  .education-content,
+  .certificate {
     gap: 30px;
   }
 
-  .education-content h3, .certificate h3{
+  .education-content h3,
+  .certificate h3 {
     font-size: 1.6em;
   }
 
-  .education-content p, .certificate p{
+  .education-content p,
+  .certificate p {
     font-size: 1.6em;
   }
 }
-
 
 @media screen and (min-width: 1160px) {
   .navigation-bar .logo {
@@ -594,12 +596,14 @@ footer {
 
   .description,
   h3,
-  ol, .education-content p, .certificate p {
+  ol,
+  .education-content p,
+  .certificate p {
     font-size: 2.1em;
   }
 
-
-  .education-content h3, .certificate h3{
+  .education-content h3,
+  .certificate h3 {
     font-size: 2.1em;
   }
 
@@ -616,6 +620,35 @@ footer {
   .checkwork {
     font-size: 2em;
     padding: 20px 60px 20px 60px;
+  }
+
+  .projects img {
+    /* max-width: 100%;
+    max-height: 100%; */
+    height: 700px;
+    width: 700px;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+
+  .projects img:hover {
+    opacity: 1;
+  }
+
+  .project-description {
+    font-size: 2.5em;
+  }
+  .languages-used {
+    font-size: 1.5em;
+  }
+
+  .project-content {
+    gap: 50px;
+  }
+
+  .redirect-icons img {
+    width: 60px;
+    height: 60px;
   }
 }
 
