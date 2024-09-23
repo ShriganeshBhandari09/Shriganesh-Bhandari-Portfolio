@@ -1,41 +1,52 @@
+/* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
 
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* img {
-    width: 200px;
-    height: 200px;
-    display: none;
-  } */
-
-.logo {
-  display: none;
-}
-
-ul {
-  display: none;
-}
-
+/* Body Styles */
 body {
   background-color: #1d1d1d;
   color: white;
-  font-family: Barlow;
+  font-family: "PT Serif";
 }
 
+/* Social Media Section */
 .social-media {
   display: flex;
   gap: 10px;
 }
 
 .social-media img {
-  width: 50px;
-  height: 50px;
+  width: 30x;
+  height: 30px;
 }
+
+/* Headings and Tag Styles */
+h1::before,
+h1::after,
+.p-tag::before,
+.p-tag::after,
+h2::before,
+h2::after,
+form::before,
+form::after,
+.h3-tag::before,
+.h3-tag::after {
+  font-family: La Belle Aurore, cursive;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  color: #8d8d8d;
+}
+
 h1::before {
   content: "<h1>";
   display: block;
@@ -72,58 +83,7 @@ h2::after {
   content: "</h3>";
 }
 
-form::before {
-  content: "<form>";
-  display: block;
-}
-
-form::after {
-  content: "</form>";
-}
-
-.languages-used p::before {
-  content: "< ";
-  display: inline;
-  font-family: Barlow;
-  color: white;
-  opacity: 1;
-}
-
-.languages-used p::after {
-  content: " />";
-  display: inline;
-  font-family: Barlow;
-  color: white;
-  opacity: 1;
-}
-
-h1::before,
-h1::after,
-.p-tag::before,
-.p-tag::after,
-h2::before,
-h2::after,
-form::before,
-form::after,
-.h3-tag::before,
-.h3-tag::after {
-  font-family: La Belle Aurore, cursive;
-  opacity: 0.5;
-  font-size: 1.5rem;
-  color: #8d8d8d;
-}
-
-/* h1::after,
-.p-tag::after,
-h2::after,
-form::after{
-    margin-left: 20px;
-} */
-
-/* #root{
-    display: flex;
-} */
-
+/* Section Styles */
 .introduction-section,
 .about-me,
 .portfolio,
@@ -133,45 +93,51 @@ form::after{
   padding-top: 2em;
 }
 
-.navigation-bar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 30px 20px 20px 20px;
-}
-
-.main-container {
-  width: 90vw;
-  margin: 0 auto;
-}
-
 .introduction-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.about-me {
+.navigation-bar {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  padding: 30px 20px 20px 20px;
 }
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+ul {
+  display: none;
 }
 
-.description {
+.navigation-bar a {
+  text-decoration: none;
   font-size: 1.5em;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fd1056;
+  font-family: Allura;
 }
 
+.navigation-bar a:hover::before {
+  content: "< ";
+  color: white;
+}
+
+.navigation-bar a:hover::after {
+  content: " />";
+  color: white;
+}
+
+/* Main Container */
+.main-container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Typography */
 .h1-tag {
-  font-size: 3.3em;
-  font-family: Barlow;
+  font-size: 2em;
+  font-family: PT Serif;
   font-weight: 900;
   letter-spacing: 1px;
   display: inline;
@@ -184,131 +150,85 @@ form::after{
 
 .gray-text {
   color: gray;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 500;
 }
 
-.profile-btn {
-  padding: 10px 40px 10px 40px;
-  font-size: 1.2em;
-  background: none;
-  color: #fd1056;
-  border: 0.5px solid #fd1056;
-  outline: none;
-  cursor: pointer;
-  text-align: center;
-  width: fit-content;
-  font-family: Barlow;
-  border-radius: 8px;
-}
-
-.profile-btn:hover {
-  background-color: white;
-}
-
 .h2-tag {
-  font-size: 2.5em;
+  font-size: 2.3em;
   color: #fd1056;
   padding-bottom: 20px;
 }
 
-.description a {
-  color: #fd1056;
+h3 {
+  font-size: 1em;
+  padding-top: 20px;
 }
 
-h3 {
-  font-size: 1.4em;
+.description {
+  font-size: 1.2em;
+  font-weight: 200;
+  font-family: Inter;
 }
 
 ol {
+  padding: 30px 0px 0px 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 1.5em;
-  padding: 40px;
 }
 
-.projects a {
+/* Links */
+.description a {
   color: #fd1056;
   text-decoration: none;
 }
-/* .projects{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-} */
 
+/* Project Section */
 #project {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.projects {
+.project-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .projects img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
 }
+
 .project-description {
   font-size: 1.2em;
-  font-weight: 100;
+  font-weight: 200;
+  font-family: Inter;
 }
 
-.project-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.languages-used {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.languages-used p {
-  background-color: hsla(0, 0%, 69%, 0.035);
-  border: 0.2px;
-  padding: 5px;
+/* Buttons */
+.profile-btn,
+.submit-form-button {
+  padding: 10px 50px;
+  font-size: 1em;
+  background: none;
+  color: #fd1056;
+  border: 0.5px solid #fd1056;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  font-family: PT Serif;
 }
 
-.redirect-icons {
-  display: flex;
-  gap: 20px;
+.profile-btn:hover,
+.submit-form-button:hover {
+  background-color: white;
 }
 
-.redirect-icons img {
-  width: 40px;
-  height: 40px;
-}
-
-.education-content,
-.certificate {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.certificates-section,
-.education-section {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.certificate p,
-.education p {
-  color: rgba(255, 255, 255, 0.7);
-}
-
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
@@ -317,13 +237,12 @@ form {
 
 form input,
 textarea {
-  font-size: 1.5em;
-  padding: 15px 10px 15px 10px;
+  font-size: 1em;
+  padding: 15px 10px;
   border: none;
-  outline: none;
   background-color: hsla(0, 0%, 69%, 0.035);
   color: white;
-  font-family: Barlow;
+  font-family: PT Serif;
   border-radius: 8px;
 }
 
@@ -332,104 +251,82 @@ textarea::placeholder {
   color: white;
 }
 
-.submit-form-button {
-  padding: 10px 30px 10px 30px;
-  width: fit-content;
-  color: #fd1056;
-  font-size: 1.5em;
-  background: none;
-  border: 0.2px solid #fd1056;
-  font-family: Barlow;
-  border-radius: 8px;
-  cursor: pointer;
+/* Languages Used */
+.languages-used {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.submit-form-button:hover {
-  background-color: white;
+.languages-used p {
+  background-color: hsla(0, 0%, 69%, 0.035);
+  padding: 5px;
+  font-size: 0.9em;
 }
 
+.languages-used p::before {
+  content: "< ";
+  font-family: PT Serif;
+  color: white;
+}
+
+.languages-used p::after {
+  content: " />";
+  font-family: PT Serif;
+  color: white;
+}
+
+.redirect-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.redirect-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: La Belle Aurore, cursive;
-  font-size: 1.1em;
+  font-family: Salsa;
+  font-size: 1em;
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) {
+label {
+  display: none;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navigation-bar {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
   .introduction-section,
   .about-me,
   .portfolio,
-  .contact-form,
-  .education,
-  .certifications {
-    padding-top: 1.5em;
+  .contact-me {
+    padding: 1.5em;
   }
 
-  .h1-tag {
-    font-size: 3.6em;
-  }
-
-  .projects {
-    flex-direction: row;
-  }
-
-  .projects img {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .redirect-icons img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .project-description {
-    font-size: 1em;
-  }
-
-  .submit-form-button {
-    padding: 10px 50px 10px 50px;
-  }
-
-  /* h1::after,
-  .p-tag::after,
-  h2::after,
-  form::after {
-    margin-left: 20px;
-  } */
-
-  footer {
-    font-size: 1.5em;
-  }
-
-  .h2-tag {
+  .h1-tag{
     font-size: 3em;
-    font-weight: 600;
-  }
-  .education-content h3,
-  .certificate h3 {
-    font-size: 1.5em;
-  }
-
-  .education-content p,
-  .certificate p {
-    font-size: 1.4em;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background-color: rgb(62, 11, 75);
+  }
+
   .hamburger-menu {
     display: none;
   }
-
-  /* #root {
-      display: flex;
-    } */
 
   .introduction-section,
   .about-me,
@@ -443,48 +340,19 @@ footer {
   .navigation-bar .logo {
     display: inline;
     font-size: 1.8em;
-    text-decoration: none;
     font-family: Allura;
     color: #fd1056;
-    text-align: center;
   }
 
-  .logo:hover::before {
-    content: "< ";
-    color: white;
-  }
-  .logo:hover::after {
-    content: " />";
-    color: white;
-  }
-
-  .navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 60px 30px 60px;
-    /* padding: 30px 20px 20px 20px; */
-    gap: 150px;
-    /* height: 100%;
-    position: fixed; */
-    /* padding: 30px 30px 30px 0px; */
-    /* width: 30%; */
-    /* border-bottom: 2px solid #8d8d8d; */
-    border-radius: 0px 0px 40px 40px;
-    width: 90vw;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
-    background-color: #2c2c2c;
+  .h1-tag {
+    font-size: 3.5em;
   }
 
   ul {
     display: flex;
     list-style: none;
-    /* flex-direction: column; */
     gap: 40px;
     font-size: 1.5em;
-    text-align: center;
   }
 
   li a {
@@ -496,334 +364,4 @@ footer {
   li a:hover {
     color: #fd1056;
   }
-
-  li a:hover:before {
-    content: "< ";
-  }
-  li a:hover::after {
-    content: " />";
-  }
-
-  /* .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
-
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    margin: 0 auto;
-  }
-
-  .h1-tag {
-    font-size: 4.4em;
-  }
-
-  .gray-text {
-    font-size: 2.5em;
-  }
-
-  .profile-btn {
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-
-  .h2-tag {
-    font-size: 3.5em;
-  }
-
-  .project-description {
-    font-size: 1.5em;
-    font-weight: 100;
-  }
-
-  .projects {
-    max-height: 100%;
-    /* margin: 0 auto; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: fit-content;
-  }
-
-  h1::before,
-  h1::after,
-  .p-tag::before,
-  .p-tag::after,
-  h2::before,
-  h2::after,
-  form::before,
-  form::after,
-  .h3-tag::before,
-  .h3-tag::after {
-    font-size: 2.3rem;
-  }
-
-  .education-content,
-  .certificate {
-    gap: 30px;
-  }
-
-  .education-content h3,
-  .certificate h3 {
-    font-size: 1.6em;
-  }
-
-  .education-content p,
-  .certificate p {
-    font-size: 1.6em;
-  }
 }
-
-@media screen and (min-width: 1160px) {
-  .navigation-bar .logo {
-    font-size: 2.2em;
-  }
-
-  ul {
-    font-size: 1.8em;
-  }
-  .h1-tag {
-    font-size: 6em;
-  }
-
-  .h2-tag {
-    font-size: 4em;
-  }
-
-  .description,
-  h3,
-  ol,
-  .education-content p,
-  .certificate p {
-    font-size: 2.1em;
-  }
-
-  .education-content h3,
-  .certificate h3 {
-    font-size: 2.1em;
-  }
-
-  ol {
-    padding: 70px;
-    padding-bottom: 20px;
-  }
-
-  .project-description {
-    font-size: 1.8em;
-    font-weight: 100;
-  }
-
-  .checkwork {
-    font-size: 2em;
-    padding: 20px 60px 20px 60px;
-  }
-
-  .projects img {
-    /* max-width: 100%;
-    max-height: 100%; */
-    height: 700px;
-    width: 700px;
-    object-fit: cover;
-    opacity: 0.7;
-  }
-
-  .projects img:hover {
-    opacity: 1;
-  }
-
-  .project-description {
-    font-size: 2.5em;
-  }
-  .languages-used {
-    font-size: 1.5em;
-  }
-
-  .project-content {
-    gap: 50px;
-  }
-
-  .redirect-icons img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-/* @media screen and (min-width: 1440px) {
-    .navigation-bar {
-      width: 25%;
-      gap: 30px;
-    }
-  
-    .main-container {
-      left: 350px;
-      max-width: 70%;
-      top: 60px;
-    }
-  
-    ul {
-      font-size: 2.2em;
-      gap: 40px;
-    }
-  
-    .h1-tag {
-      font-size: 5.5em;
-    }
-  
-    .gray-text {
-      font-size: 2.3em;
-    }
-  
-    #check-my-work {
-      padding: 20px 70px 20px 70px;
-      font-size: 1.5em;
-    }
-  
-    .h2-tag {
-      font-size: 3.5em;
-    }
-  
-    .description,
-    h3,
-    ol {
-      font-size: 2em;
-    }
-  
-    ol {
-      padding: 40px 60px 40px 60px;
-    }
-  
-    .project-description {
-      font-size: 1.8em;
-    }
-  
-    .languages-used p {
-      font-size: 1.3rem;
-      padding: 5px 20px;
-    }
-  
-    .redirect-icons img {
-      width: 50px;
-      height: 50px;
-    }
-  
-    form input,
-    textarea {
-      width: 80%;
-      font-size: 1.5em;
-    }
-  
-    .submit-form-button {
-      font-size: 1.5em;
-      padding: 10px 90px 10px 90px;
-    }
-  
-    h1::before,
-    h1::after,
-    .p-tag::before,
-    .p-tag::after,
-    h2::before,
-    h2::after,
-    form::before,
-    form::after {
-      font-size: 1.8rem;
-    }
-  
-    .introduction-section,
-    .about-me,
-    .portfolio,
-    .contact-form {
-      padding: 2.5em;
-    }
-  } */
-
-/* @media screen and (min-width: 1440px) {
-  .navigation-bar {
-    width: 20%;
-    gap: 60px;
-  }
-
-  .main-container {
-    left: 350px;
-    max-width: 70%;
-    top: 100px;
-  }
-
-  ul {
-    font-size: 2.5em;
-    gap: 70px;
-  }
-
-  .h1-tag {
-    font-size: 7em;
-  }
-
-  .gray-text {
-    font-size: 3.8em;
-  }
-
-  #check-my-work {
-    padding: 20px 70px 20px 70px;
-    font-size: 2em;
-  }
-
-  .h2-tag {
-    font-size: 4.5em;
-  }
-
-  .description,
-  h3,
-  ol {
-    font-size: 2.5em;
-  }
-
-  ol {
-    padding: 40px 80px 40px 80px;
-  }
-
-  .project-description {
-    font-size: 2.1em;
-  }
-
-  .languages-used p {
-    font-size: 1.5rem;
-    padding: 5px 20px;
-  }
-
-  .redirect-icons img {
-    width: 60px;
-    height: 60px;
-  }
-
-  form input,
-  textarea {
-    width: 70%;
-    font-size: 2em;
-  }
-
-  .submit-form-button {
-    font-size: 2em;
-    padding: 10px 90px 10px 90px;
-  }
-
-  h1::before,
-  h1::after,
-  .p-tag::before,
-  .p-tag::after,
-  h2::before,
-  h2::after,
-  form::before,
-  form::after {
-    font-size: 2rem;
-  }
-
-  .introduction-section,
-  .about-me,
-  .portfolio,
-  .contact-form {
-    padding: 3em;
-  }
-} */
