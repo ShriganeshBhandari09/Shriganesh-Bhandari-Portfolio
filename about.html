@@ -62,21 +62,26 @@
     <!-- <link rel="manifest" href="/site.webmanifest"> -->
 
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/about.css" />
   </head>
   <body>
     <div id="root">
       <div class="navigation-bar">
         <a href="/index.html" class="logo">Shriganesh Bhandari</a>
-        <ul>
+        <div class="hamburger-menu">
+          <i
+            class="fa-solid fa-bars fa-xl"
+            style="color: #ffffff"
+            id="navigation-button"
+            onclick="displayNavigationMenu()"
+          ></i>
+        </div>
+        <ul id="navbar-menu">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/portfolio.html">Portfolio</a></li>
           <li><a href="/contact-me.html">Contact</a></li>
         </ul>
-        <div class="hamburger-menu">
-          <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
-        </div>
       </div>
       <div class="main-container">
         <article class="about-me">
@@ -104,11 +109,7 @@
             href="assets/Shriganesh Bhandari.pdf"
             download="Shriganesh Bhandari"
             ><button class="download-btn profile-btn">
-              <img
-                src="assets/download.svg"
-                alt=""
-                id="download-resume"
-              />
+              <img src="assets/download.svg" alt="" id="download-resume" />
               Download My Resume
             </button></a
           >
@@ -155,5 +156,6 @@
         </footer>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

@@ -64,18 +64,23 @@
   </head>
   <body>
     <div id="root">
-      <div class="navigation-bar">
-        <a href="/index.html" class="logo">Shriganesh Bhandari</a>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="/contact-me.html">Contact Me</a></li>
-        </ul>
-        <div class="hamburger-menu">
-          <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
-        </div>
-      </div>
+        <div class="navigation-bar">
+            <a href="/index.html" class="logo">Shriganesh Bhandari</a>
+            <div class="hamburger-menu">
+              <i
+                class="fa-solid fa-bars fa-xl"
+                style="color: #ffffff"
+                id="navigation-button"
+                onclick="displayNavigationMenu()"
+              ></i>
+            </div>
+            <ul id="navbar-menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/contact-me.html">Contact</a></li>
+            </ul>
+          </div>
       <div class="main-container">
         <article class="portfolio">
           <h2 class="h2-tag">Portfolio</h2>
@@ -232,5 +237,8 @@
         <p class="footer">Built by Shriganesh Bhandari | &copy; 2024</p>
       </footer>
     </div>
+
+    <script src="script/script.js"></script>
+
   </body>
 </html>
