@@ -1,0 +1,75 @@
+ol {
+  padding-bottom: 20px;
+}
+
+.download-btn {
+  padding: 10px 50px;
+  font-size: 1em;
+  background: none;
+  color: #fd1056;
+  border: 0.5px solid #fd1056;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  font-family: PT Serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.education-section,
+.education-content,
+.education-content,
+.certificates-section,
+.certificate {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-section,
+.certificates-section {
+  gap: 30px;
+}
+.education-content,
+.certificate {
+  gap: 20px;
+}
+
+.education-content p,
+.certificate p {
+  font-size: 1em;
+}
+
+.h3-tag {
+  font-size: 1em;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .h3-tag,
+  .education-content p,
+  .certificate p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h3-tag,
+  .education-content p,
+  .certificate p {
+    font-size: 1.4em;
+  }
+
+  .education-section,
+  .certificates-section {
+    gap: 50px;
+  }
+  .education-content,
+  .certificate {
+    gap: 40px;
+  }
+}
