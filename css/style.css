@@ -30,6 +30,11 @@ body {
   height: 30px;
 }
 
+i{
+  color: #ffffff;
+  cursor: pointer;
+}
+
 /* Headings and Tag Styles */
 h1::before,
 h1::after,

@@ -70,7 +70,6 @@
         <div class="hamburger-menu">
           <i
             class="fa-solid fa-bars fa-xl"
-            style="color: #ffffff"
             id="navigation-button"
             onclick="displayNavigationMenu()"
           ></i>
@@ -104,9 +103,11 @@
                 loading="lazy"
             /></a>
           </div>
-          <a href="/pages/portfolio.html"><button class="profile-btn" aria-label="Check my Work button">
-            Check my Work
-          </button></a>
+          <a href="/pages/portfolio.html"
+            ><button class="profile-btn" aria-label="Check my Work button">
+              Check my Work
+            </button></a
+          >
         </article>
         <article class="about-me">
           <h2 class="h2-tag">About Me</h2>
@@ -145,7 +146,7 @@
           <section id="project">
             <div class="projects">
               <img
-                src="assets/RestCountries.24c4bad7db2b5553e71f.jpeg"
+                src="assets/RestCountries.24c4bad7db2b5553e7f.jpeg"
                 alt="REST Countries project"
                 class="project-image"
                 loading="lazy"
@@ -166,6 +167,7 @@
                 </div>
                 <div class="redirect-icons">
                   <a
+                    rel="noopener"
                     href="https://bespoke-vacherin-8c5e65.netlify.app/"
                     target="_blank"
                     ><img
@@ -174,6 +176,7 @@
                       loading="lazy"
                   /></a>
                   <a
+                    rel="noopener"
                     href="https://github.com/ShriganeshBhandari09/Netflix-FAQ"
                     target="_blank"
                     ><img
@@ -186,7 +189,7 @@
             </div>
             <div class="projects">
               <img
-                src="assets//urlShortener.13a0d5d2c67c81a5c97b.png"
+                src="assets//urlShortener.13a0d5d2c67c81a5c7b.png"
                 alt="URL Shortener project"
                 class="project-image"
                 loading="lazy"
@@ -205,6 +208,7 @@
                 </div>
                 <div class="redirect-icons">
                   <a
+                    rel="noopener"
                     href="https://bespoke-vacherin-8c5e65.netlify.app/"
                     target="_blank"
                     ><img
@@ -213,6 +217,7 @@
                       loading="lazy"
                   /></a>
                   <a
+                    rel="noopener"
                     href="https://github.com/ShriganeshBhandari09/Netflix-FAQ"
                     target="_blank"
                     ><img
@@ -225,7 +230,7 @@
             </div>
             <div class="projects">
               <img
-                src="assets/Bankist.7957967811a479c5370a.jpeg"
+                src="assets/Bankist.7957967811a479c5370a.jeg"
                 alt="Bankist project"
                 class="project-image"
                 loading="lazy"
@@ -246,6 +251,7 @@
                 </div>
                 <div class="redirect-icons">
                   <a
+                    rel="noopener"
                     href="https://bespoke-vacherin-8c5e65.netlify.app/"
                     target="_blank"
                     ><img
@@ -254,6 +260,7 @@
                       loading="lazy"
                   /></a>
                   <a
+                    rel="noopener"
                     href="https://github.com/ShriganeshBhandari09/Netflix-FAQ"
                     target="_blank"
                     ><img
@@ -269,7 +276,7 @@
 
         <article class="contact-me">
           <h2 class="h2-tag">Contact Me</h2>
-          <form action="submit">
+          <form action="https://formspree.io/f/xqazrljg" method="POST">
             <label for="fullname">Full Name</label>
             <input
               type="text"
@@ -298,7 +305,11 @@
               rows="5"
               cols="50"
             ></textarea>
-            <button class="submit-form-button" aria-label="Send message button">
+            <button
+              type="submit"
+              class="submit-form-button"
+              aria-label="Send message button"
+            >
               Send
             </button>
           </form>
