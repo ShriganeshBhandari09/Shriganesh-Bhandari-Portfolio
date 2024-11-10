@@ -30,7 +30,7 @@ body {
   height: 30px;
 }
 
-i{
+i {
   color: #ffffff;
   cursor: pointer;
 }
@@ -94,7 +94,7 @@ h2::after {
 .introduction-section,
 .about-me,
 .portfolio,
-.contact-me,
+.contact-form,
 .education,
 .certifications {
   padding-top: 2em;
@@ -341,8 +341,12 @@ textarea::placeholder {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* Footer */
-footer {
+.footer {
+  bottom: 0;
+  position: relative;
+}
+/* .footer-p-tag */
+.footer-p-tag {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +374,7 @@ label {
 /* Media Queries */
 
 @media (min-width: 375px) and (max-width: 767.98px) {
-  footer {
+  .footer-p-tag {
     font-size: 1em;
   }
 }
@@ -387,7 +391,7 @@ label {
   .introduction-section,
   .about-me,
   .portfolio,
-  .contact-me,
+  .contact-form,
   .education,
   .certifications {
     padding: 1.5em;
@@ -440,7 +444,7 @@ label {
   .introduction-section,
   .about-me,
   .portfolio,
-  .contact-me,
+  .contact-form,
   .education,
   .certifications {
     padding: 2em;
@@ -545,7 +549,7 @@ label {
   .introduction-section,
   .about-me,
   .portfolio,
-  .contact-me,
+  .contact-form,
   .education,
   .certifications {
     padding: 2em;
@@ -649,7 +653,7 @@ label {
     font-size: 1.2em;
   }
 
-  footer {
+  .footer-p-tag {
     font-size: 1.2em;
   }
 }
