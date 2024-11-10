@@ -344,6 +344,7 @@ textarea::placeholder {
 .footer {
   bottom: 0;
   position: relative;
+  z-index: -10;
 }
 /* .footer-p-tag */
 .footer-p-tag {
