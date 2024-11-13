@@ -11,7 +11,20 @@
       name="keywords"
       content="Shriganesh Bhandari, Full Stack Developer, HTML, CSS, JavaScript, Portfolio"
     />
-    <title>Personal Portfolio | Shriganesh Bhandari</title>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shriganesh Bhandari - Full Stack Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore Shriganesh Bhandari's Full Stack Developer portfolio, showcasing HTML, CSS, JavaScript, React, and more."
+    />
+    <meta property="og:url" content="https://www.example.com" />
+    <meta property="og:image" content="URL to your image" />
+    <meta name="author" content="Shriganesh Bhandari" />
+    <meta name="author" content="Shriganesh Bhandari" />
+    <title>Shriganesh Bhandari - Full Stack Developer Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -104,7 +117,11 @@
             /></a>
           </div>
           <a href="/pages/portfolio.html"
-            ><button class="profile-btn" aria-label="Check my Work button">
+            ><button
+              class="profile-btn"
+              aria-label="Check my Work button"
+              type="button"
+            >
               Check my Work
             </button></a
           >
@@ -145,12 +162,18 @@
           </p>
           <section id="project">
             <div class="projects">
-              <img
-                src="assets/Quiz App.png"
-                alt="Quiz project"
-                class="project-image"
-                loading="lazy"
-              />
+              <a
+                rel="noopener"
+                href="https://programming-quiz-app.vercel.app/"
+                target="_blank"
+              >
+                <img
+                  src="assets/Quiz App.png"
+                  alt="Quiz project"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </a>
               <div class="project-content">
                 <p class="project-description p-tag">
                   A quiz app focused on HTML, CSS, and JavaScript, designed to
@@ -188,12 +211,18 @@
               </div>
             </div>
             <div class="projects">
-              <img
-                src="assets/Portfolio.png"
-                alt="Personal Portfolio project"
-                class="project-image"
-                loading="lazy"
-              />
+              <a
+                rel="noopener"
+                href="https://shriganesh-bhandari-portfolio.vercel.app/"
+                target="_blank"
+              >
+                <img
+                  src="assets/Portfolio.png"
+                  alt="Personal Portfolio project"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </a>
               <div class="project-content">
                 <p class="project-description p-tag">
                   My personal portfolio website showcases my web development
