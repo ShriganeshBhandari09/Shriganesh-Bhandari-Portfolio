@@ -7,13 +7,11 @@ function displayNavigationMenu() {
     navbarMenu.classList.add("navbar-deactivate");
     navigationButton.classList.remove("fa-xmark");
     navigationButton.classList.add("fa-bars");
-    console.log("If running")
   } else {
     navbarMenu.classList.remove("navbar-deactivate");
     navbarMenu.classList.add("navbar-active");
     navigationButton.classList.remove("fa-bars");
     navigationButton.classList.add("fa-xmark");
-    console.log("Else running")
   }
 }
 
