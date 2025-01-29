@@ -20,7 +20,7 @@
       property="og:description"
       content="Explore Shriganesh Bhandari's Full Stack Developer portfolio, showcasing HTML, CSS, JavaScript, React, and more."
     />
-    <meta property="og:url" content="https://www.example.com" />
+    <meta property="og:url" content="https://www.shriganesh-bhandari-tech" />
     <meta property="og:image" content="URL to your image" />
     <meta name="author" content="Shriganesh Bhandari" />
     <meta name="author" content="Shriganesh Bhandari" />
@@ -88,14 +88,14 @@
           ></i>
         </div>
         <ul id="navbar-menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/about.html">About</a></li>
-          <li><a href="/pages/portfolio.html">Portfolio</a></li>
-          <li><a href="/pages/contact-me.html">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </div>
       <div class="main-container">
-        <article class="introduction-section">
+        <article id="profile" class="introduction-section">
           <h1 class="h1-tag">
             Hi, I'm <br />
             <em class="pink-text">Shriganesh Bhandari</em><br />
@@ -116,17 +116,27 @@
                 loading="lazy"
             /></a>
           </div>
-          <a href="/pages/portfolio.html"
-            ><button
-              class="profile-btn"
-              aria-label="Check my Work button"
-              type="button"
+          <div class="home-buttons">
+            <a
+              href="../assets/Shriganesh_Bhandari_CV.pdf"
+              download="Shriganesh Bhandari"
+              ><button type="button" class="download-btn profile-btn">
+                Download My Resume
+              </button></a
             >
-              Check my Work
-            </button></a
-          >
+
+            <a href="#portfolio"
+              ><button
+                class="profile-btn"
+                aria-label="Check my Work button"
+                type="button"
+              >
+                Check my Work
+              </button></a
+            >
+          </div>
         </article>
-        <article class="about-me">
+        <article id="about-me" class="about-me">
           <h2 class="h2-tag">About Me</h2>
           <p class="description">
             Recent Computer Science graduate (2023) with strong skills in HTML,
@@ -140,8 +150,10 @@
           <ol>
             <li>HTML5</li>
             <li>CSS3</li>
+            <li>Tailwind CSS</li>
+            <li>Sass</li>
             <li>Javascript</li>
-            <li>MongoDB</li>
+            <!-- <li>MongoDB</li> -->
             <li>ReactJs</li>
             <li>Github</li>
             <li>Git</li>
@@ -149,7 +161,7 @@
           </ol>
         </article>
 
-        <article class="portfolio">
+        <article id="portfolio" class="portfolio">
           <h2 class="h2-tag">Portfolio</h2>
           <p class="description p-tag">
             I've invested substantial time in a variety of projects, thoroughly
@@ -264,6 +276,50 @@
                 </div>
               </div>
             </div>
+
+            <div class="projects">
+              <div class="project-container">
+                <a
+                  rel="noopener"
+                  href="https://techpaathshala.com"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/Techpaathshala.png"
+                    alt="Techpaathshala"
+                    class="project-img"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <p class="project-description p-tag">
+                  Redesigned <strong>TechPaathshala.com</strong> to enhance user
+                  experience, improve responsiveness, and optimize performance.
+                  Focused on a modern UI/UX, better navigation, and improved
+                  accessibility. Implemented clean, maintainable code using
+                  HTML, SCSS, JavaScript to ensure a seamless experience across
+                  all devices.
+                </p>
+                <div class="languages-used">
+                  <p>HTML5</p>
+                  <p>Scss</p>
+                  <p>Javascript</p>
+                  <p>PHP</p>
+                </div>
+                <div class="redirect-icons">
+                  <a
+                    rel="noopener"
+                    href="https://techpaathshala.com"
+                    target="_blank"
+                    ><img
+                      src="assets/new-tab.svg"
+                      alt="Open project in new tab"
+                      loading="lazy"
+                  /></a>
+                </div>
+              </div>
+            </div>
             <div class="projects">
               <div class="project-container">
                 <a
@@ -319,35 +375,33 @@
           </section>
         </article>
 
-        <article class="contact-form">
+        <article id="contact-me" class="contact-form">
           <h2 class="h2-tag">Contact Me</h2>
+          <p class="description p-tag">
+            If you are interested in hiring me I am always open to new
+            opportunities and interesting projects! Feel free to contact me if
+            you have any other requests or questions regarding web development.
+          </p>
           <form action="https://api.web3forms.com/submit" method="POST">
             <input
               type="hidden"
               name="access_key"
               value="99aa5739-7753-4509-a5e8-560424e6a05c"
             />
-            <label for="fullname">Full Name</label>
             <input
               type="text"
               name="fullname"
               id="fullname"
               placeholder="Full Name"
               required
-              aria-required="true"
             />
-            <label for="email">Email</label>
             <input
-              type="email"
+              type="text"
               name="email"
               id="email"
               placeholder="Email"
               required
-              aria-required="true"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              title="Please enter a valid email address."
             />
-            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
@@ -355,13 +409,7 @@
               rows="5"
               cols="50"
             ></textarea>
-            <button
-              type="submit"
-              class="submit-form-button"
-              aria-label="Send message button"
-            >
-              Send
-            </button>
+            <button type="submit" class="submit-form-button">Send</button>
           </form>
         </article>
         <footer class="footer">
