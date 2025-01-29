@@ -127,8 +127,8 @@ ul {
   position: fixed;
   list-style: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 40px;
+  padding-left: 30px;
   width: 100vw;
   height: 100vh;
   background-color: #1d1d1d;
