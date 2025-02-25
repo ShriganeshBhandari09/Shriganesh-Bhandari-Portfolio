@@ -28,10 +28,10 @@ navlinks.forEach((link) => {
   link.addEventListener("click", closeNavbar);
 });
 
-function initializeNavbar() {
-  if (window.matchMedia("(min-width: 992px)").matches) {
-    navbarMenu.classList.remove("navbar-active");
-  }
-}
+// function initializeNavbar() {
+//   if (window.matchMedia("(min-width: 992px)").matches) {
+//     navbarMenu.classList.remove("navbar-active");
+//   }
+// }
 
-window.addEventListener("load", initializeNavbar);
+// window.addEventListener("load", initializeNavbar);
